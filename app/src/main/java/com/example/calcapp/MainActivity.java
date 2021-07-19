@@ -102,4 +102,10 @@ public class MainActivity extends AppCompatActivity {
         resultField.setText(operand.toString().replace('.', ','));
         numberField.setText("");
     }
+
+    private void reset (){
+        resultField=null;
+        numberField=null;
+        operationField=null;
+    }
 }

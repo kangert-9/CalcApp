@@ -16,6 +16,4 @@
     <string name="_minus">-</string>
     <string name="_plus">+</string>
     <string name="_eq">=</string>
-    <dimen name="textCounter">20sp</dimen>
-
 </resources>
