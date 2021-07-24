@@ -3,6 +3,7 @@ package com.example.calcapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -103,9 +104,11 @@ public class MainActivity extends AppCompatActivity {
         numberField.setText("");
     }
 
-    private void reset (){
-        resultField=null;
-        numberField=null;
-        operationField=null;
+    //Button btnSettings = findViewById(R.id.button_settings);
+        public void settings (View v) {
+            Intent runSettings = new Intent(MainActivity.this,
+                    settings.class);
+            startActivity(runSettings);
+        }
+
     }
-}
